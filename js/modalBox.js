@@ -21,3 +21,11 @@ btnClose.addEventListener ("click", btnClickClose => {
 	modalBackground.classList.remove("modal-background-visibile");
 	modalContent.classList.remove("modal-content-visible");
 });
+
+window.onclick = event => {
+	if (event.target == modalBackground) {
+		modal.classList.remove("modal-visible");
+		modalBackground.classList.remove("modal-background-visibile");
+		modalContent.classList.remove("modal-content-visible");
+	}
+}
