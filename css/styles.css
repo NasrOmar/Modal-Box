@@ -42,6 +42,10 @@ body {
 	z-index: 100;
 }
 
+.modal-visible {
+	pointer-events: auto;
+}
+
 .modal-background {
 	position: absolute;
 	top: 0;
@@ -68,7 +72,7 @@ body {
 	transition: all .3s;
 }
 
-.modal-content-visibile {
+.modal-content-visible {
 	opacity: 1;
 	transform: scale(1);
 }
